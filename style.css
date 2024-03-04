@@ -7,6 +7,7 @@
   --Grayish-Blue: hsl(218, 22%, 67%);
   --Cyan: hsl(179, 62%, 43%);
   --Cyan-2: hsl(179, 62%, 75%);
+  --Cyan-3: hsl(179, 62%, 48%);
   --Bright-Yellow: hsl(71, 73%, 54%);
 }
 
@@ -56,31 +57,29 @@ body {
   border-radius: 0 0 0 8px;
   padding: 2rem;
 }
-.grid-2 h3{
+.grid-2 h3 {
   color: white;
   margin-bottom: 1rem;
-
 }
 
-.dollar{
+.dollar {
   color: white;
   font-size: 35px;
 }
 
-.grid_2_text{
+.grid_2_text {
   color: white;
   font-weight: 500;
   font-size: 18px;
   margin-top: 1rem;
 }
-.monthly{
+.monthly {
   color: var(--Cyan-2);
   font-size: 18px;
   margin-left: 5px;
-  
 }
 
-.btn{
+.btn {
   background-color: var(--Bright-Yellow);
   color: white;
   padding: 15px 15px;
@@ -94,13 +93,38 @@ body {
   margin: 2rem 0;
 }
 
-.grid-3{
-  background-color: var(--Cyan-2);
+.grid-3 {
+  background-color: var(--Cyan-3);
   padding: 2rem;
   border-bottom-right-radius: 8px;
 }
 
-.grid-3 h3{
+.grid-3 h3 {
   color: rgb(240, 239, 239);
   margin-bottom: 1rem;
+}
+
+.grid-3 p {
+  color: hsl(179, 62%, 85%);
+  line-height: 25px;
+  width: 220px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    display: inline;
+    margin: 2rem 1rem;
+  }
+  .grid-2 {
+    border-radius: 0;
+  }
+
+  .btn{
+    width: 90%;
+    margin-bottom: 0;
+  }
+  .grid-3 {
+    border-radius: 0 0 8px 8px;
+  }
 }
